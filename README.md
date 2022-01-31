@@ -5,6 +5,7 @@ openCV mediapipe Based Project
 <p> You can simply pip to install necessarry module. </p>
 
 <code>pip install opencv-python</code>
+
 <code>pip install mediapipe</code>
 
 -----------------------------------
