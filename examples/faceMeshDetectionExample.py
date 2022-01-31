@@ -2,7 +2,7 @@ import cv2
 import mediapipe
 import meshTracker as mt
 
-cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture("Video.mp4")
 tracker = mt.MeshDetection()
 
 while True:
