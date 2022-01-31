@@ -1,5 +1,4 @@
 import cv2
-from cv2 import trace
 import mediapipe
 import meshTracker as mt
 
