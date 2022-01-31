@@ -18,7 +18,7 @@ MediaPipe Face Mesh
 Project FaceMesh Detection with MediaPipe
 ---------------------------------------------------
 
-> For Static Eye Detection 
+> For Static FaceMesh Detection 
 
 ```python
 import cv2
@@ -38,7 +38,7 @@ cv2.destroyAllWindows()
 </p>
 
 
-> For Dynamic or Real Time Eye Detection
+> For Dynamic or Real Time FaceMesh Detection
 
 ```python
 import cv2
