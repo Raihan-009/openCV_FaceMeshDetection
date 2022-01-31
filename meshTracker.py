@@ -21,7 +21,8 @@ class MeshDetection():
                 self.mpDraw = mp.solutions.drawing_utils
                 self.mp_facemesh = mp.solutions.face_mesh
                 self.faceMesh = self.mp_facemesh.FaceMesh(self.static_image_mode,self.max_num_faces,refine_landmarks,self.min_detection_confidence,self.min_tracking_confidence)
-                self.landmarks_drawing_Spec = self.mpDraw.DrawingSpec(thickness = 1, circle_radius = 1)
+                self.landmarks_drawing_Spec = self.mpDraw.DrawingSpec(color=(237, 71, 5),thickness = 1, circle_radius = 1)
+                self.connection_drawing_spec = self.mpDraw.DrawingSpec(color=(0,0,0), thickness = 1)
 
     def findFaceMesh(self, img, draw = True):
         self.rgbImg = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
@@ -30,7 +31,7 @@ class MeshDetection():
         if self.results.multi_face_landmarks:
             for faceialLandmarks in self.results.multi_face_landmarks:
                 if draw:
-                    self.mpDraw.draw_landmarks(img, faceialLandmarks, self.mp_facemesh.FACEMESH_CONTOURS,self.landmarks_drawing_Spec)
+                    self.mpDraw.draw_landmarks(img, faceialLandmarks, self.mp_facemesh.FACEMESH_CONTOURS,self.landmarks_drawing_Spec, self.connection_drawing_spec)
                     face = []
                     for id, lm in enumerate(faceialLandmarks.landmark):
                         h,w,c = img.shape
