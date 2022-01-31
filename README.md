@@ -33,7 +33,7 @@ cv2.destroyAllWindows()
 ```
 
 <p align = "center">
-    <img src = "https://github.com/Raihan-009/openCV_EyeDetection/blob/main/results/staticEyeDetectionExample.png">
+    <img src = "https://github.com/Raihan-009/openCV_FaceMeshDetection/blob/main/results/staticFaceMeshDetection.png">
 </p>
 
 
