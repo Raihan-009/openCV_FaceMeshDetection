@@ -71,7 +71,7 @@ cv2.destroyAllWindows()
 DLIB C++ Library
 -----------------------------------
 
-<p>Dlib is a modern C++ toolkit containing machine learning algorithms and tools for creating complex software in C++ to solve real world problems. It is used in both industry and academia in a wide range of domains including robotics, embedded devices, mobile phones, and large high performance computing environments. To get know more about dlib visit <a href = "http://dlib.net/"> dlib c++ library</a> </p>
+<p>Dlib is a modern C++ toolkit containing machine learning algorithms and tools for creating complex software in C++ to solve real world problems. It is used in both industry and academia in a wide range of domains including robotics, embedded devices, mobile phones, and large high performance computing environments. To get know more about dlib visit <a href = "http://dlib.net/"> dlib c++ library.</a> </p>
 
 
 <p align = "center">
