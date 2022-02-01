@@ -1,5 +1,5 @@
 # openCV_FaceMeshDetection
-openCV mediapipe Based Project
+openCV mediapipe and dlib Based Project
 
 
 -----------------------------------
