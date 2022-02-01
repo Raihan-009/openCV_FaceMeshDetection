@@ -73,6 +73,15 @@ DLIB C++ Library
 To get know more about dlib visit <a href = "http://dlib.net/"> dlib c++ library</a>
 
 
+
+## Necessarry dependencies
+<p> You can simply pip to install necessarry module. </p>
+
+<code>pip install cmake</code>
+
+<code>pip install dlib</code>
+
+
 <p align = "center">
     <img src = "https://github.com/Raihan-009/openCV_FaceMeshDetection/blob/main/68_points_face_landmark.png">
 </p>
