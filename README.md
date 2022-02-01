@@ -77,6 +77,10 @@ To get know more about dlib visit <a href = "http://dlib.net/"> dlib c++ library
     <img src = "https://github.com/Raihan-009/openCV_FaceMeshDetection/blob/main/68_points_face_landmark.png">
 </p>
 
+---------------------------------------------------
+Project FaceMesh Detection with dlib
+---------------------------------------------------
+
 > For Static FaceMesh Detection using dlib
 
 
@@ -110,7 +114,8 @@ for face in faces:
 </p>
 
 
-> For Dynamic or Real Time FaceMesh Detection
+
+> For Dynamic or Real Time FaceMesh Detection using dlib
 
 ```python
 import cv2
