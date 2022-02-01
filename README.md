@@ -90,7 +90,7 @@ Project FaceMesh Detection with dlib
 
 <code>pip install dlib</code>
 
-To download trained model [click here](https://github.com/davisking/dlib-models/blob/master/shape_predictor_68_face_landmarks.dat.bz2)
+- Download [shape_predictor_68_face_landmarks.dat](https://github.com/davisking/dlib-models/blob/master/shape_predictor_68_face_landmarks.dat.bz2)
 
 
 > For Static FaceMesh Detection using dlib
