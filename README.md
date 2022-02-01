@@ -1,12 +1,6 @@
 # openCV_FaceMeshDetection
 openCV mediapipe Based Project
 
-## Necessarry dependencies
-<p> You can simply pip to install necessarry module. </p>
-
-<code>pip install opencv-python</code>
-
-<code>pip install mediapipe</code>
 
 -----------------------------------
 MediaPipe Face Mesh
@@ -21,6 +15,14 @@ MediaPipe Face Mesh
 ---------------------------------------------------
 Project FaceMesh Detection with MediaPipe
 ---------------------------------------------------
+
+## Necessarry dependencies
+<p> You can simply pip to install necessarry module. </p>
+
+<code>pip install opencv-python</code>
+
+<code>pip install mediapipe</code>
+
 
 > For Static FaceMesh Detection 
 
@@ -73,6 +75,14 @@ DLIB C++ Library
 To get know more about dlib visit <a href = "http://dlib.net/"> dlib c++ library</a>
 
 
+<p align = "center">
+    <img src = "https://github.com/Raihan-009/openCV_FaceMeshDetection/blob/main/68_points_face_landmark.png">
+</p>
+
+---------------------------------------------------
+Project FaceMesh Detection with dlib
+---------------------------------------------------
+
 
 ## Necessarry dependencies
 <p> You can simply pip to install necessarry module. </p>
@@ -81,14 +91,6 @@ To get know more about dlib visit <a href = "http://dlib.net/"> dlib c++ library
 
 <code>pip install dlib</code>
 
-
-<p align = "center">
-    <img src = "https://github.com/Raihan-009/openCV_FaceMeshDetection/blob/main/68_points_face_landmark.png">
-</p>
-
----------------------------------------------------
-Project FaceMesh Detection with dlib
----------------------------------------------------
 
 > For Static FaceMesh Detection using dlib
 
@@ -130,8 +132,7 @@ for face in faces:
 import cv2
 import dlib
 
-# cap = cv2.VideoCapture(1, cv2.CAP_DSHOW)
-cap = cv2.VideoCapture("Video.mp4")
+cap = cv2.VideoCapture(0)
 
 hog_face_detector = dlib.get_frontal_face_detector()
 dlib_faceLandmark = dlib.shape_predictor("shape_predictor_68_face_landmarks.dat")
@@ -141,20 +142,13 @@ while True:
     if ret:
         gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
         faces = hog_face_detector(gray)
-        # print(faces)
-        # print(type(faces))
         allfaces = []
         for face in faces:
             face_landmarks = dlib_faceLandmark(gray,face)
-            # print(face_landmarks)
-            # print(type(face_landmarks))
             allface = []
             for n in range(0,68):
                 x = face_landmarks.part(n).x
-                # print(x)
-                #print(type(x))
                 y = face_landmarks.part(n).y
-                # print(y)
                 allface.append([n+1,x,y])
                 cv2.circle(frame, (x,y), 1, (255,0,0), 2)
                 cv2.putText(frame, str(n+1), (x,y), cv2.FONT_HERSHEY_PLAIN,1,(255,0,255),1)
